@@ -4,7 +4,7 @@
 This project is a simple video game using p5.js the library.
 
 ## Previews
-![Poster](docs/poster/brain_brunch_poster.PNG?raw=true "Poster")
+![Poster](docs/poster/brain_brunch_poster.png?raw=true "Poster")
 
 ![Capture](docs/preview/Capture.PNG?raw=true "Capture")
 
