@@ -1,6 +1,10 @@
 let canvas;
 
+let score = 0;
+
 let backgroundSong;
+
+let wallImg;
 
 let playerImg;
 let player;
@@ -10,6 +14,7 @@ let zombieImgList = [];
 let zombies;
 
 let walls;
+let safeZones;
 
 const foodItemsCount = 6;
 let foodItemImgList = [];
@@ -26,9 +31,12 @@ function preload() {
 function setup() {
     canvas = createCanvas(1220, 580);
 
+    registerButtons();
+
     setupBackgroundSong();
     setupFoodItems();
     setupWalls();
+    setupSafeZone();
     setupPlayer();
     setupZombies();
 }
@@ -39,6 +47,7 @@ function draw() {
     drawFoodItems();
     drawPlayer();
     drawZombies();
+    drawScore();
 
     drawSprites();
 }

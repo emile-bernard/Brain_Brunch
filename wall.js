@@ -1,5 +1,5 @@
 function preloadWallImg() {
-
+    wallImg = loadImage('./assets/image/original_box.png');
 }
 
 function setupWalls() {
@@ -11,6 +11,9 @@ function setupWalls() {
             random(125, width-125), (height/5)*i,
             random(10, 100), random(10, 100));
         middleWall.shapeColor = color('#6e5018');
+
+        // middleWall.addImage(wallImg);
+
         walls.add(middleWall);
     }
 
@@ -35,7 +38,7 @@ function setupWalls() {
 
     let rightWall = createSprite(
         width, height,
-        50, height*2);
+        50, height);
     rightWall.shapeColor = color('#353836');
     walls.add(rightWall);
 }

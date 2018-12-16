@@ -1,5 +1,5 @@
 function preloadPlayerImg() {
-    playerImg = loadImage('./assets/resized_donut.png');
+    playerImg = loadImage('./assets/image/resized_donut.png');
 }
 
 function setupPlayer() {
@@ -12,6 +12,7 @@ function drawPlayer() {
     player.velocity.y = (mouseY-player.position.y)*0.1;
 
     player.collide(walls);
+    player.collide(safeZones);
     player.collide(zombies);
     player.displace(foodItems);
 }

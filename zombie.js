@@ -1,5 +1,5 @@
 function preloadZombieImg() {
-    let zombieImg = loadImage('./assets/resized_zombie.png');
+    let zombieImg = loadImage('./assets/image/resized_zombie.png');
 
     for(let i = 0; i < zombieCount; i++) {
         zombieImgList.push(zombieImg);
