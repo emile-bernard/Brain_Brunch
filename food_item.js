@@ -18,7 +18,7 @@ function setupFoodItems() {
     foodItems = new Group();
 
     for (let i = 0; i < foodItemsCount; i++) {
-        let food = createSprite(random(250, width), random(0, height), 50, 50);
+        let food = createSprite(random(250, width-20), random(0, height-20), 50, 50);
         food.addImage(foodItemImgList[i]);
         foodItems.add(food);
     }
