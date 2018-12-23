@@ -1,27 +1,28 @@
 let canvas;
 
 let score = 0;
+let winCount = 3;
+let isGameOver = false;
 
 let backgroundSong;
 
 let wallImg;
 
-let playerImg;
 let player;
+let playerImg;
 
 const zombieCount = 5;
 let zombieImgList = [];
 let zombies;
 
 let walls;
+
 let safeZones;
+let safeZoneImg;
 
 const foodItemsCount = 6;
 let foodItemImgList = [];
 let foodItems;
-
-let winCount = 3;
-let isGameOver = false;
 
 function preload() {
     preloadBackgroundSong();
@@ -29,6 +30,7 @@ function preload() {
     preloadFoodItemImg();
     preloadPlayerImg();
     preloadZombieImg();
+    preloadSafeZone();
 }
 
 function setup() {

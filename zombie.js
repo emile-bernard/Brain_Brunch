@@ -10,7 +10,7 @@ function setupZombies() {
     zombies = new Group();
 
     for (let i = 0; i < zombieCount; i++) {
-        let zombie = createSprite(random(width), random(height), 50, 80);
+        let zombie = createSprite(random(width), random(height));
         zombie.addImage(zombieImgList[i]);
         zombie.friction = random(0.3, 0.5);
         zombie.rotateToDirection = true;
