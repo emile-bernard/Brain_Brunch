@@ -12,16 +12,17 @@ function setupZombies() {
     for (let i = 0; i < zombieCount; i++) {
         let zombie = createSprite(random(width), random(height), 50, 80);
         zombie.addImage(zombieImgList[i]);
-        zombie.friction = random(0.97, 0.99);
-        zombie.maxSpeed = random(1, 4);
+        zombie.friction = random(0.4, 0.6);
         zombie.rotateToDirection = true;
+        zombie.velocity.x = random(0, 0.4);
+        zombie.velocity.y = random(0, 0.4);
         zombies.add(zombie);
     }
 }
 
 function drawZombies() {
     for (let i = 0; i < zombies.length; i++) {
-        zombies[i].attractionPoint(0.2, mouseX, mouseY);
+        zombies[i].attractionPoint(0.2, player.position.x, player.position.y);
     }
 
     zombies.collide(walls);
