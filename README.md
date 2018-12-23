@@ -16,5 +16,5 @@ This project is a simple video game using p5.js the library.
 ## Built With
 - [p5.js](https://p5js.org/)
 
-##Links
+## Links
 - [Background song](https://www.purple-planet.com/energy)
