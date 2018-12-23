@@ -20,6 +20,9 @@ const foodItemsCount = 6;
 let foodItemImgList = [];
 let foodItems;
 
+let winCount = 3;
+let isGameOver = false;
+
 function preload() {
     preloadBackgroundSong();
     preloadWallImg();

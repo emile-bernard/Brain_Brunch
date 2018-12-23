@@ -17,5 +17,5 @@ function registerButtons() {
 }
 
 function resetGame() {
-
+    location.reload(true);
 }

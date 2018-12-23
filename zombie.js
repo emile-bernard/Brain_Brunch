@@ -12,10 +12,10 @@ function setupZombies() {
     for (let i = 0; i < zombieCount; i++) {
         let zombie = createSprite(random(width), random(height), 50, 80);
         zombie.addImage(zombieImgList[i]);
-        zombie.friction = random(0.4, 0.6);
+        zombie.friction = random(0.3, 0.5);
         zombie.rotateToDirection = true;
-        zombie.velocity.x = random(0, 0.4);
-        zombie.velocity.y = random(0, 0.4);
+        zombie.velocity.x = random(0, 0.5);
+        zombie.velocity.y = random(0, 0.5);
         zombies.add(zombie);
     }
 }
@@ -27,4 +27,5 @@ function drawZombies() {
 
     zombies.collide(walls);
     zombies.displace(foodItems);
+    zombies.collide(player, gameOver);
 }
